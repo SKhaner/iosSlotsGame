@@ -83,6 +83,24 @@ struct ContentView: View {
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
+                
+                Button {
+                    s1 = names[0]
+                    s2 = names[1]
+                    s3 = names[2]
+                    //determine scores
+                    score = 0
+                } label: {
+                    Text("Reset")
+                        .font(.system(size: 17, weight: .semibold, design: .serif))
+                        .foregroundColor(Color.white)
+                        .padding(/*@START_MENU_TOKEN@*/.all, 10.0/*@END_MENU_TOKEN@*/)
+                        .background(
+                            Color.black
+                                .cornerRadius(20)
+                        )
+                }
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             }
         }
     }
